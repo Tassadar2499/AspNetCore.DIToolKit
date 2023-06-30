@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -11,7 +11,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/Tassadar2499/AspNetCore.DIToolKit</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackAsTool>True</PackAsTool>
+        <PackAsTool>False</PackAsTool>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     </PropertyGroup>
 
