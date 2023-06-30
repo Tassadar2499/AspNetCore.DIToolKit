@@ -1,16 +1,16 @@
 namespace AspNetCore.DIToolKit;
 
-public static class LifeTimeInterfaces
+public static class LifeTime
 {
-    public interface ISingletonLifeTime
+    public interface ISingleton
     {
     }
     
-    public interface IScopedLifeTime
+    public interface IScoped
     {
     }
     
-    public interface ITransientLifeTime
+    public interface ITransient
     {
     }
 }

@@ -16,13 +16,13 @@ public static class ServiceCollectionExtensions
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
         scan.FromAssemblies(assemblies)
-            .AddClasses(z => z.AssignableTo<LifeTimeInterfaces.ITransientLifeTime>())
+            .AddClasses(z => z.AssignableTo<LifeTime.ITransient>())
             .AsImplementedInterfaces()
             .WithTransientLifetime()
-            .AddClasses(z => z.AssignableTo<LifeTimeInterfaces.IScopedLifeTime>())
+            .AddClasses(z => z.AssignableTo<LifeTime.IScoped>())
             .AsImplementedInterfaces()
             .WithScopedLifetime()
-            .AddClasses(z => z.AssignableTo<LifeTimeInterfaces.ISingletonLifeTime>())
+            .AddClasses(z => z.AssignableTo<LifeTime.ISingleton>())
             .AsImplementedInterfaces()
             .WithSingletonLifetime();
     }
