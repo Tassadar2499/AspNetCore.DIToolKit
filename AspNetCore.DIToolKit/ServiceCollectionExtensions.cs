@@ -13,7 +13,11 @@ public static class ServiceCollectionExtensions
 
     private static void ConfigureByAssemblySelector(IAssemblySelector scan)
     {
-        var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+        var assemblies = AppDomain.CurrentDomain
+            .GetAssemblies()
+            .Where(a => !a.IsDynamic)
+            .Where(a => !a.FullName.StartsWith("System", StringComparison.Ordinal) &&
+                        !a.FullName.StartsWith("Microsoft", StringComparison.Ordinal));
 
         scan.FromAssemblies(assemblies)
             .AddClasses(z => z.AssignableTo<LifeTime.ITransient>())
