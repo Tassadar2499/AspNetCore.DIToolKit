@@ -18,10 +18,14 @@ public static class ServiceCollectionExtensions
         scan.FromAssemblies(assemblies)
             .AddClasses(z => z.AssignableTo<LifeTime.ITransient>())
             .AsImplementedInterfaces()
-            .WithTransientLifetime()
+            .WithTransientLifetime();
+
+        scan.FromAssemblies(assemblies)
             .AddClasses(z => z.AssignableTo<LifeTime.IScoped>())
             .AsImplementedInterfaces()
-            .WithScopedLifetime()
+            .WithScopedLifetime();
+
+        scan.FromAssemblies(assemblies)
             .AddClasses(z => z.AssignableTo<LifeTime.ISingleton>())
             .AsImplementedInterfaces()
             .WithSingletonLifetime();
