@@ -1,16 +1,21 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.DIToolKit", "AspNetCore.DIToolKit\AspNetCore.DIToolKit.csproj", "{EA2BD0E0-98D2-4855-9EEE-186B63316470}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.DIToolKit", "AspNetCore.DIToolKit\\AspNetCore.DIToolKit.csproj", "{EA2BD0E0-98D2-4855-9EEE-186B63316470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.DIToolKit.Tests", "AspNetCore.DIToolKit.Tests\\AspNetCore.DIToolKit.Tests.csproj", "{96071487-089D-4034-8179-39E9DF985B0E}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA2BD0E0-98D2-4855-9EEE-186B63316470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA2BD0E0-98D2-4855-9EEE-186B63316470}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA2BD0E0-98D2-4855-9EEE-186B63316470}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA2BD0E0-98D2-4855-9EEE-186B63316470}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+        GlobalSection(SolutionConfigurationPlatforms) = preSolution
+                Debug|Any CPU = Debug|Any CPU
+                Release|Any CPU = Release|Any CPU
+        EndGlobalSection
+        GlobalSection(ProjectConfigurationPlatforms) = postSolution
+                {EA2BD0E0-98D2-4855-9EEE-186B63316470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {EA2BD0E0-98D2-4855-9EEE-186B63316470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {EA2BD0E0-98D2-4855-9EEE-186B63316470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {EA2BD0E0-98D2-4855-9EEE-186B63316470}.Release|Any CPU.Build.0 = Release|Any CPU
+                {96071487-089D-4034-8179-39E9DF985B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {96071487-089D-4034-8179-39E9DF985B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {96071487-089D-4034-8179-39E9DF985B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {96071487-089D-4034-8179-39E9DF985B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+        EndGlobalSection
 EndGlobal
