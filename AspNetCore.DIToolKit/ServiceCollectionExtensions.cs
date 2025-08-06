@@ -6,7 +6,7 @@ namespace AspNetCore.DIToolKit;
 
 public static class ServiceCollectionExtensions
 {
-    public static void ConfigureServicesByLifeTimeCycle(this IServiceCollection serviceCollection, IConfiguration configuration)
+    public static void ConfigureServicesByLifetime(this IServiceCollection serviceCollection, IConfiguration configuration)
     {
         serviceCollection.Scan(ConfigureByAssemblySelector);
     }
